@@ -1,0 +1,48 @@
+.taskItem {
+    padding: 0.35rem 0;
+}
+
+.taskItemBox {
+    width: 100%;
+    background: var(--gray-500);
+    border: 1px solid var(--gray-400);
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.taskCheckBox {
+    padding: 1rem 1rem;
+    cursor: pointer;
+}
+
+.text {
+    padding: 1.2rem 0;
+    color: var(--gray-100);
+    font-size: 0.875rem;
+    font-weight: regular;
+    text-align: center;
+}
+
+.textDone {
+    padding: 1.2rem 0;
+    color: var(--gray-300);
+    font-size: 0.875rem;
+    font-weight: regular;
+    text-align: center;
+    text-decoration: line-through;
+}
+
+.taskItemBox button {
+    padding: 1rem 1rem;
+    background: transparent;
+    border: 0;
+    color: var(--gray-300);
+    cursor: pointer;
+    line-height: 0;
+    border-radius: 2px;
+}
+
+.taskItemBox button:hover {
+    color: var(--danger);
+}

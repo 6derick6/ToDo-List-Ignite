@@ -1,0 +1,55 @@
+.task {
+    padding: 4rem 0;
+    width: 46rem;
+}
+
+.infosTasks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.infosTasksCC {
+    display: flex;
+}
+
+.textTaskCreated {
+    padding-right: 0.7rem;
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: var(--blue);
+}
+
+.counterTaskCreated {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: var(--gray-200);
+    background: var(--gray-400);
+    padding: 0.16rem 0.5rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.textTaskConclude {
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: var(--purple);
+    padding-right: 0.7rem;
+}
+
+.counterTaskConclude {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: var(--gray-200);
+    background: var(--gray-400);
+    padding: 0.16rem 0.5rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.taskItems {
+    padding: 1.15rem 0;
+}
