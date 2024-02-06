@@ -1,3 +1,4 @@
+import { EmptyTask } from './EmptyTask';
 import styles from './Task.module.css';
 import { TaskItem } from './TaskItem';
 
@@ -19,6 +20,7 @@ export function Task() {
             {/* {tasks.length === 0 ? <Empty /> */}
             <div className={styles.taskItems}>
                 <TaskItem />
+                {/* <EmptyTask /> */}
             </div> 
             {/* } */}
 

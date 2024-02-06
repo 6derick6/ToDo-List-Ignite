@@ -13,6 +13,9 @@
 
 .taskCheckBox {
     padding: 1rem 1rem;
+}
+
+.taskCheckBox img {
     cursor: pointer;
 }
 
@@ -38,11 +41,11 @@
     background: transparent;
     border: 0;
     color: var(--gray-300);
-    cursor: pointer;
     line-height: 0;
     border-radius: 2px;
 }
 
-.taskItemBox button:hover {
+.taskItemBox button svg:hover {
     color: var(--danger);
+    cursor: pointer;
 }

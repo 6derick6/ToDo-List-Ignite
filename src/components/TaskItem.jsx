@@ -15,7 +15,7 @@ export function TaskItem() {
                     <span className={styles.text}>Integer urna interdum massa libero auctor neque turpis turpis semper.  Duis vel sed fames integer.</span>
                     {/* <span className={done ? styles.textDone : styles.text}></span> */}
                     <button title='Deletar Tarefa'>
-                        <Trash size={18} />
+                        <Trash size={18} style={{cursor: 'pointer'}} />
                     </button>
                 </div>
             </div>
@@ -29,7 +29,7 @@ export function TaskItem() {
                     <span className={styles.text}>Integer urna interdum massa libero auctor neque turpis turpis semper.  Duis vel sed fames integer.</span>
                     {/* <span className={done ? styles.textDone : styles.text}></span> */}
                     <button title='Deletar Tarefa'>
-                        <Trash size={18} />
+                        <Trash size={18} style={{cursor: 'pointer'}} />
                     </button>
                 </div>
             </div>
@@ -43,7 +43,7 @@ export function TaskItem() {
                     <span className={styles.text}>Integer urna interdum massa libero auctor neque turpis turpis semper.  Duis vel sed fames integer.</span>
                     {/* <span className={done ? styles.textDone : styles.text}></span> */}
                     <button title='Deletar Tarefa'>
-                        <Trash size={18} />
+                        <Trash size={18} style={{cursor: 'pointer'}} />
                     </button>
                 </div>
             </div>
@@ -57,7 +57,7 @@ export function TaskItem() {
                     <span className={styles.textDone}>Integer urna interdum massa libero auctor neque turpis turpis semper.  Duis vel sed fames integer.</span>
                     {/* <span className={done ? styles.textDone : styles.text}></span> */}
                     <button title='Deletar Tarefa'>
-                        <Trash size={18} />
+                        <Trash size={18} style={{cursor: 'pointer'}} />
                     </button>
                 </div>
             </div>
@@ -71,7 +71,7 @@ export function TaskItem() {
                     <span className={styles.textDone}>Integer urna interdum massa libero auctor neque turpis turpis semper.  Duis vel sed fames integer.</span>
                     {/* <span className={done ? styles.textDone : styles.text}></span> */}
                     <button title='Deletar Tarefa'>
-                        <Trash size={18} />
+                        <Trash size={18} style={{cursor: 'pointer'}} />
                     </button>
                 </div>
             </div>
