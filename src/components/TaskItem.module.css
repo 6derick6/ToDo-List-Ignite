@@ -8,15 +8,19 @@
     border: 1px solid var(--gray-400);
     border-radius: 8px;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .taskCheckBox {
     padding: 1rem 1rem;
+    display: flex;
 }
 
 .taskCheckBox img {
     cursor: pointer;
+    width: 56px;
+    height: 56px;
 }
 
 .text {
@@ -24,7 +28,7 @@
     color: var(--gray-100);
     font-size: 0.875rem;
     font-weight: regular;
-    text-align: center;
+    text-align: start;
 }
 
 .textDone {
