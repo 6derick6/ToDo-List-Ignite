@@ -4,6 +4,11 @@ import Check from '../assets/check.png';
 import Checked from '../assets/checked.png';
 
 export function TaskItem({ id, content, isChecked }) {
+
+    function handleDeletTask(){
+        
+    }
+
     return (
         <div>
             <div className={styles.taskItem}>

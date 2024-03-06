@@ -2,11 +2,16 @@ import styles from './NewTask.module.css';
 import Plus from '../assets/plus.png';
 import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
+import { EmptyTask } from './EmptyTask';
 
 export function NewTask({task, setTask}) {
     const [content, setContent] = useState('')
 
     function handleNewTask() {
+        if(content == ''){
+            alert('Você precisa preencher para adicionar à lista!')
+            return 
+        }
         const id = uuidv4()
         
         const newTask = 
@@ -17,6 +22,8 @@ export function NewTask({task, setTask}) {
         }
 
         setTask([newTask, ...task])
+
+        setContent('')
     }
 
     return(
