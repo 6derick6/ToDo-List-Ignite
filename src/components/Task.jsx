@@ -44,8 +44,11 @@ export function Task({ task, setTask }) {
                     {task.map(item => (
                         <TaskItem 
                             key={item.id}
+                            id={item.id}
                             content={item.content}
                             isChecked={item.isChecked}
+                            task={item.task}
+                            setTask={item.setTask}
                         />
                     ))}
                 </div> 

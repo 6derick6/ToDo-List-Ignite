@@ -3,10 +3,15 @@ import { Trash } from 'phosphor-react';
 import Check from '../assets/check.png';
 import Checked from '../assets/checked.png';
 
-export function TaskItem({ id, content, isChecked }) {
+export function TaskItem({ id, content, isChecked, task, setTask }) {
 
-    function handleDeletTask(){
-        
+    function handleDeleteTask(id) {
+        console.log(id)
+        // const commentsWithoutDeletedOne = comments.filter(comment => {
+        //     return comment != commentToDelete;
+        // })
+
+        // setComments(commentsWithoutDeletedOne);
     }
 
     return (
@@ -18,7 +23,7 @@ export function TaskItem({ id, content, isChecked }) {
                         <span className={styles.text}>{content}</span>
                     </div>
                     {/* <span className={done ? styles.textDone : styles.text}></span> */}
-                    <button title='Deletar Tarefa'>
+                    <button title='Deletar Tarefa' onClick={handleDeleteTask}>
                         <Trash size={18} />
                     </button>
                 </div>
