@@ -47,8 +47,8 @@ export function Task({ task, setTask }) {
                             id={item.id}
                             content={item.content}
                             isChecked={item.isChecked}
-                            task={item.task}
-                            setTask={item.setTask}
+                            task={task}
+                            setTask={setTask}
                         />
                     ))}
                 </div> 

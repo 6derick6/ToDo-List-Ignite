@@ -6,12 +6,12 @@ import Checked from '../assets/checked.png';
 export function TaskItem({ id, content, isChecked, task, setTask }) {
 
     function handleDeleteTask(id) {
-        console.log(id)
-        // const commentsWithoutDeletedOne = comments.filter(comment => {
-        //     return comment != commentToDelete;
-        // })
 
-        // setComments(commentsWithoutDeletedOne);
+        const tasksWithoutDeletedOne = task.filter(tasks => {
+            return tasks.id != id;
+        })
+
+        setTask(tasksWithoutDeletedOne);
     }
 
     return (
@@ -23,7 +23,7 @@ export function TaskItem({ id, content, isChecked, task, setTask }) {
                         <span className={styles.text}>{content}</span>
                     </div>
                     {/* <span className={done ? styles.textDone : styles.text}></span> */}
-                    <button title='Deletar Tarefa' onClick={handleDeleteTask}>
+                    <button title='Deletar Tarefa' onClick={() => handleDeleteTask(id)}>
                         <Trash size={18} />
                     </button>
                 </div>
