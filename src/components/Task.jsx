@@ -20,6 +20,16 @@ export function Task({ task, setTask }) {
 
         setTasksChacked(contador)
     }
+
+    function handleUpdateCheck(id){
+        let newTask = task;
+        newTask.forEach(tasks => {
+            if(tasks.id === id) {
+                tasks.isChecked = tasks.isChecked ? false : true;
+            } 
+        });
+        setTask(newTask);
+    }
     
     return (
         <article className={styles.task}>
@@ -49,6 +59,7 @@ export function Task({ task, setTask }) {
                             isChecked={item.isChecked}
                             task={task}
                             setTask={setTask}
+                            setUpdateCheck={handleUpdateCheck}
                         />
                     ))}
                 </div> 
